@@ -20,6 +20,8 @@ namespace FriendLetter.Controllers
       return View(myLetterVariable);
     }
 
+    [Route("/form")] 
+    public ActionResult Form() { return View(); }
     [Route("/postcard")]
     public ActionResult Postcard(string recipient, string sender)
     {
